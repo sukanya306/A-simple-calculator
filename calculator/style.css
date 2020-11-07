@@ -1,0 +1,90 @@
+body{
+ font-family: 'Open Sans',sans-serif;
+ background-color: black;   
+}
+#container{
+    width: 1000px;
+    height: 550px;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(img1.jpg);
+    margin:100px auto;
+    
+}
+#calculator
+{
+    width: 300px;
+    height: 500px;
+    background-color: darkgray;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#result{
+    height: 120px;
+}
+#keyboard{
+    height: 400px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: dimgray;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: darkgray;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px; /*when the user will press the button , the size will be small*/
+}
+.operator:focus, .number:focus, .empty{
+    outline: 0;  /* this will make the outline dissapeared */
+}
+button:nth-child(4){
+    /*nth child will choose the nth operator or button*/
+    font-size: 20px;
+    background-color: firebrick;
+}
+button:nth-child(8){
+    /*nth child will choose the nth operator or button*/
+    font-size: 20px;
+    background-color: hotpink
+}
+button:nth-child(12){
+    /*nth child will choose the nth operator or button*/
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(16){
+    /*nth child will choose the nth operator or button*/
+    font-size: 20px;
+    background-color: #9477af;
+}
+button:nth-child(20){
+    /*nth child will choose the nth operator or button*/
+    font-size: 20px;
+    background-color: #20b2aa;
+}
